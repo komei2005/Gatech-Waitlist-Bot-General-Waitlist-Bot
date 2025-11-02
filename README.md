@@ -24,13 +24,14 @@
 #Docker (optional)
 
 # Dockerfile
-#FROM python:3.11-slim
-#WORKDIR /app
-#COPY watcher/requirements.txt .
-#RUN pip install -r requirements.txt
-#COPY watcher/ ./
-#COPY .env ./
-#CMD ["python", "main.py"]
+FROM python:3.11-slim
+WORKDIR /app
+COPY watcher/requirements.txt .
+RUN pip install -r requirements.txt
+COPY watcher/ ./
+COPY .env ./
+CMD ["python", "main.py"]
+
 
 
 #Build & run:
