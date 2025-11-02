@@ -1,4 +1,4 @@
-#How to pick the correct TERM code
+**#How to pick the correct TERM code**
 
 #Banner term format is YYYYTT where TT is:
 
@@ -7,13 +7,13 @@
 #Confirm the active registration term code from OSCAR’s dynamic schedule page (you don’t need to log in). Use that code in .env as TERM.
 
 
-#CRNs to monitor
+**#CRNs to monitor**
 
 #Get CRNs from the class search (public). Add them to .env as CRNS=12345,67890.
 
 #Run it 24/7
 
-#Linux/macOS (background)
+**#Linux/macOS (background)**
 
 #nohup python watcher/main.py > run.log 2>&1 &
 
@@ -34,12 +34,12 @@ CMD ["python", "main.py"]
 
 
 
-#Build & run:
+**#Build & run:**
 
 #docker build -t gt-watcher .
 #docker run --env-file .env --name gtwatch gt-watcher
 
-#Tips
+**#Tips**
 
 #Labels change slightly between terms (“Seats: Maximum/Actual/Remaining”). The parser above is resilient, but if GT tweaks wording, open any section page in your browser, copy the text block, and adjust the regex in banner.py.
 
