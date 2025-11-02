@@ -1,7 +1,7 @@
 **#How to pick the correct TERM code**
 
 #Banner term format is YYYYTT where TT is:
-
+#YYYY is the year
 #01 = Summer, 02 = Spring, 08 = Fall (varies by institution; at GT, Spring commonly shows 02, Fall 08).
 
 #Confirm the active registration term code from OSCAR’s dynamic schedule page (you don’t need to log in). Use that code in .env as TERM.
